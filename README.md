@@ -48,7 +48,14 @@ straight forward! wish all compiles in the world were like this)
 - Open CMakeLists.txt
 - add set(GLFW_USE_EGL, 1) on top 
 - find GLFW_CLIENT_LIBRARY and set it to glesv1 
+
+- There is an issue with getting the GL version under OpenPandora; I'm hoping someone will help with that, but for now
+I hardcoded it (version = (const char*) glGetString(GL_VERSION); returns Null...) ; open de file in the GLFW3 source tree;
+src/context.c and change the top function to; https://gist.github.com/tluyben/5110198
+
 - run cmake .; make ; make install 
+
+
 
 - check if all is ok and the following files exist
 
