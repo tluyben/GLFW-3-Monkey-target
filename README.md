@@ -83,4 +83,6 @@ TODO:
 
 - test everything building wise and smooth it out
 - test sound (didn't do that at all yet) 
-- ? 
+- simplify/automate setup
+- make Pandora PND 
+- test on Rasberry PI 
